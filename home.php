@@ -48,7 +48,7 @@
 
         <div class="w">
 
-            <div class="slide"style="background:url(images/one.png) no-repeat">
+            <div class="slide"style="background:url(images/header-bg-1.png) no-repeat">
                 <div class="content">
                     <span>explore, discover, Travel</span>
                     <h3>travel around the world</h3>
@@ -58,7 +58,7 @@
             </div>
 
 
-            <div class="slide"style="background:url(images/home-slide-2.jpg) no-repeat">
+            <div class="slide"style="background:url(images/header-bg-2.jpg) no-repeat">
                 <div class="content">
                     <span>explore, discover, Travel</span>
                     <h3>discover the new places</h3>
@@ -67,7 +67,7 @@
 
             </div>
 
-            <div class="slide"style="background:url(images/home-slide-3.jpg) no-repeat">
+            <div class="slide"style="background:url(images/header-bg-3.jpg) no-repeat">
                 <div class="content">
                     <span>explore, discover, Travel</span>
                     <h3>make your tour worthwhile   </h3>
