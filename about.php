@@ -44,7 +44,38 @@
     <h1>about us</h1>
 </div>
 
+<!-- about section starts -->
+<section class="about">
+    <div class="image">
+        <img src="/images/about-img.jpg" alt="">
 
+    </div>
+    <div class="content">
+        <h3>why choose us?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora dolorum soluta quae adipisci, sapiente ratione labore</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+            qui dolore nobis obcaecati, corrupti, eaque minima blanditiis temporibus</p>
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <span>top destinations</span>
+            </div>
+            <div class="icons">
+                <i class="fas fa-hand-holding-usd"></i>
+                <span>affordable price</span>
+            </div>
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+                <span>24/7 guide service</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends  -->
 
 
 <!-- footer section starts -->
