@@ -227,6 +227,19 @@
 
 <!-- home package section ends  -->
 
+<!-- home offer section starts  -->
+
+<section class="home-offer">
+
+    <div class="content">
+        <h3>upto 50%off</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Magni ab consequuntur animi illo pariatur molestiae dignissimos facilis! </p>
+        <a href="book.php" class="btn">book now</a>
+    </div>
+</section>
+
+<!-- home offer section ends  -->
 
 <!-- footer section starts -->
     <section class="footer">
