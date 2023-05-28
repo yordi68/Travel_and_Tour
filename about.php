@@ -78,6 +78,103 @@
 <!-- about section ends  -->
 
 
+<!-- review section starts  -->
+<section class="reviews">
+    <!-- <h3 id="clients-review">Clients Review</h3> -->
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slider slide">
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Suscipit blanditiis, itaque et perferendis maiores saepe explicabo, 
+                    earum quia voluptate est, doloribus harum praesentium nam accusantium 
+                    magni voluptatum enim nobis esse!</p>
+                <h3>Yodahe Ketema</h3>
+                <span>traveler</span>
+                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
+
+            </div>
+
+            <div class="swiper-slider slide">
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laudantium labore nam at illum accusamus impedit quibusdam 
+                     reprehenderit maxime quae vitae.</p>
+                <h3> Yihun Shkuri</h3>
+                <span>traveler</span>
+                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
+
+            </div>
+
+            <div class="swiper-slider slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consectetur, blanditiis.</p>
+                <h3> Yordanos Seyoum</h3>
+                <span>traveler</span>
+                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
+
+            </div>
+
+            <div class="swiper-slider slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Magnam aut assumenda accusamus necessitatibus et?</p>
+                <h3>Selihom Demeke</h3>
+                <span>traveler</span>
+                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
+
+            </div>
+
+
+            <div class="swiper-slider slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Pariatur recusandae reprehenderit nemo quia quisquam molestiae?</p>
+                <h3>Yordanos Yigu</h3>
+                <span>traveler</span>
+                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- review section ends  -->
+
 <!-- footer section starts -->
     <section class="footer">
         <div class="box-container">

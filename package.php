@@ -45,6 +45,30 @@
 </div>
 
 
+<!-- package section starts  -->
+
+<section class="packages">
+
+    <h1 class="heading-title">top destinations</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <div class="image">
+                
+                <img src="images/header-bg-3.jpg" alt="Hi">
+
+            </div>
+        </div>
+    </div> 
+
+
+</section>
+
+<!-- package section ends  -->
+
+
 <!-- footer section starts -->
     <section class="footer">
         <div class="box-container">
