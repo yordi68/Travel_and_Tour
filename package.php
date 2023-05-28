@@ -56,13 +56,152 @@
         <div class="box">
 
             <div class="image">
-                
+
+                <img src="images/header-bg-1.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-2.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+
+            <div class="image">
+
                 <img src="images/header-bg-3.jpg" alt="Hi">
 
             </div>
-        </div>
-    </div> 
+            <div class="content">
 
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-4.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-5.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-6.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-7.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-8.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+        </div>
+
+
+
+        <div class="box">
+
+            <div class="image">
+
+                <img src="images/header-bg-9.jpg" alt="Hi">
+
+            </div>
+            <div class="content">
+
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure?</p>
+                <a href="book.php" class="btn">book now</a>
+            </div>
+
+        </div>
+
+
+    </div> 
+    <div class="load-more"><span class="btn"> load more </span></div>
 
 </section>
 
