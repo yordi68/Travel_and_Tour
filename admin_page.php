@@ -51,45 +51,57 @@ $data = $db->fetchdata();
 <!-- header section ends -->
 
 
-<!-- <div class="heading" style="background:url(images/header-bg-1.jpg) no repeat">
-    <h1>about us</h1>
-</div> -->
+
+
+
+<div class="flex justify-end">
+  <form class="flex">
+    <input type="text" class="p-3 border border-gray-300 rounded-l-md mr-10 text-lg" placeholder="Search...">
+    <button type="submit" class="bg-purple-400 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-r-md mr-14">Go</button>
+  </form>
+</div>
+
+
+
 
     <!-- Data Displaying section starts -->
-    <section class="m-10 p -10">
+    <section class="m-20 p-5">
     <?php if ($data && $data->num_rows > 0) { ?>
-        <table class="">
-            <tr class="m-2 p-2">
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Address</th>
-                <th>Location</th>
-                <th>Guests</th>
-                <th>Arrivals</th>
-                <th>Leaving</th>
+        <table class="w-full border-collapse">
+            <tr class="bg-gray-200 text-xl">
+                <th class="py-2 px-6">ID</th>
+                <th class="py-2 px-6">Name</th>
+                <th class="py-2 px-6">Email</th>
+                <th class="py-2 px-6">Phone</th>
+                <th class="py-2 px-6">Address</th>
+                <th class="py-2 px-6">Location</th>
+                <th class="py-2 px-6">Guests</th>
+                <th class="py-2 px-6">Arrivals</th>
+                <th class="py-2 px-6">Leaving</th>
+                <th class="py-2 px-6">Actions</th>
             </tr>
             <?php while ($row = $data->fetch_assoc()) { ?>
-                <tr >
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['name']; ?></td>
-                    <td><?php echo $row['email']; ?></td>
-                    <td><?php echo $row['phone']; ?></td>
-                    <td><?php echo $row['address']; ?></td>
-                    <td><?php echo $row['location']; ?></td>
-                    <td><?php echo $row['guests']; ?></td>
-                    <td><?php echo $row['arrivals']; ?></td>
-                    <td><?php echo $row['leaving']; ?></td>
-                    <td><a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
-                </tr>   
-
+                <tr class="bg-white text-xl">
+                    <td class="py-2 px-5"><?php echo $row['id']; ?></td>
+                    <td class="py-2 px-5"><?php echo $row['name']; ?></td>
+                    <td class="py-2 px-9"><?php echo $row['email']; ?></td>
+                    <td class="py-2 px-20"><?php echo $row['phone']; ?></td>
+                    <td class="py-2 px-20"><?php echo $row['address']; ?></td>
+                    <td class="py-2 px-20"><?php echo $row['location']; ?></td>
+                    <td class="py-2 px-20"><?php echo $row['guests']; ?></td>
+                    <td class="py-2 px-20"><?php echo $row['arrivals']; ?></td>
+                    <td class="py-2 px-20"><?php echo $row['leaving']; ?></td>
+                    <td class="py-2 px-20">
+                        <a href="delete.php?id=<?php echo $row['id']; ?>" class="text-red-500">Delete</a>
+                    </td>
+                </tr>
             <?php } ?>
         </table>
     <?php } else { ?>
         <p>No records found</p>
     <?php } ?>
-    </section>
+</section>
+
 
 
     <!-- Data displaying section ends -->
@@ -147,7 +159,7 @@ $data = $db->fetchdata();
         </div>
 
 
-        <div class="credit">created by <span>Yordanos Yirgu </span> | all rights reserved! </div>
+        <!-- <div class="credit">created by <span>Yordanos Yirgu </span> | all rights reserved! </div> -->
     </section>
 <!-- footer section ends  -->
 

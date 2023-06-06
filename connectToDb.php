@@ -37,8 +37,8 @@ class connectToDb {
         }
     }
     
-    public function fetchonerecord($userid) {
-        $sql = "SELECT * FROM user WHERE id = $userid";
+    public function fetchonerecord($id) {
+        $sql = "SELECT * FROM book_form WHERE id = '$id' ";
         $result = $this->conn->query($sql);
         
         if ($result->num_rows > 0) {
@@ -59,7 +59,7 @@ class connectToDb {
     }
     
     public function delete($id) {
-        $sql = "DELETE FROM user WHERE userid = '$id'";
+        $sql = "DELETE FROM book_form WHERE id = '$id'";
         
         if ($this->conn->query($sql) === true) {
             echo "Record deleted successfully";

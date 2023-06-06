@@ -226,7 +226,7 @@
         </div>
 
 
-        <div class="credit">created by <span>Yordanos Yirgu </span> | all rights reserved! </div>
+        <!-- <div class="credit">created by <span>Yordanos Yirgu </span> | all rights reserved! </div> -->
     </section>
 <!-- footer section ends  -->
 
