@@ -1,3 +1,11 @@
+<?php
+include('connectToDb.php');
+
+$db = new connectToDb();
+$data = $db->fetchdata();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
 
+    <!-- Tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- swiper cdn link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -20,7 +30,8 @@
 
 </head>
 <body>
-    
+
+
 <!-- header section start -->
 <section class="header">
     <a href="home.php" class="logo"> Travel</a>
@@ -40,73 +51,53 @@
 <!-- header section ends -->
 
 
-<div class="heading" style="background:url(images/header-bg-3.jpg) no repeat">
-    <h1>book now</h1>
-</div>
+<!-- <div class="heading" style="background:url(images/header-bg-1.jpg) no repeat">
+    <h1>about us</h1>
+</div> -->
 
-<!-- booking section start  -->
-<section class="booking">
+    <!-- Data Displaying section starts -->
+    <section class="m-10 p -10">
+    <?php if ($data && $data->num_rows > 0) { ?>
+        <table class="">
+            <tr class="m-2 p-2">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Location</th>
+                <th>Guests</th>
+                <th>Arrivals</th>
+                <th>Leaving</th>
+            </tr>
+            <?php while ($row = $data->fetch_assoc()) { ?>
+                <tr >
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['phone']; ?></td>
+                    <td><?php echo $row['address']; ?></td>
+                    <td><?php echo $row['location']; ?></td>
+                    <td><?php echo $row['guests']; ?></td>
+                    <td><?php echo $row['arrivals']; ?></td>
+                    <td><?php echo $row['leaving']; ?></td>
+                    <td><a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+                </tr>   
 
-    <h1 class="heading-title">book your trip!</h1>
-
-    <form action="book_form.php" method="POST"  class="book-form">
-
-        <div class="flex">
-            <div class="inputBox">
-                <span>name: </span>
-                <input type="text" placeholder="enter your name" name="name">
-            </div>
-
-            <div class="inputBox">
-                <span>email: </span>
-                <input type="email" placeholder="enter your email" name="email">
-            </div>
-
-            <div class="inputBox">
-                <span>phone: </span>
-                <input type="number" placeholder="enter your phone" name="phone">
-            </div>
-
-            <div class="inputBox">
-                <span>address: </span>
-                <input type="text" placeholder="enter your address" name=address>
-            </div>
-
-            <div class="inputBox">
-                <span>where to: </span>
-                <input type="text" placeholder="place  you want to visit" name="location">
-            </div>
-
-            <div class="inputBox">
-                <span>how many: </span>
-                <input type="number" placeholder="How many guests" name="guests">
-            </div>
-
-            <div class="inputBox">
-                <span>arrivals: </span>
-                <input type="date" name="arrivals">
-            </div>
-
-            <div class="inputBox">
-                <span>leaving: </span>
-                <input type="date" name="leaving">
-            </div>
-
-        </div>
-
-        <input type="submit" value="submit" class="btn" name="send">
-    </form>
-
-</section>
+            <?php } ?>
+        </table>
+    <?php } else { ?>
+        <p>No records found</p>
+    <?php } ?>
+    </section>
 
 
-<!-- booking section ends  -->
-
+    <!-- Data displaying section ends -->
 
 
 
 <!-- footer section starts -->
-    <section class="footer">
+<section class="footer">
         <div class="box-container">
         <div class="box">
 
