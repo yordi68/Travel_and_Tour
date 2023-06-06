@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
 
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- swiper cdn link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -39,141 +41,49 @@
 
 <!-- header section ends -->
 
+<div class="back bg-black px-8 py-32">
 
-<div class="heading" style="background:url(images/header-bg-1.jpg) no repeat">
-    <h1>about us</h1>
+    <div class="flex justify-center mb-16">
+        <form class="flex">
+            <input type="text" class="p-5 border-2 border-gray-500 rounded-l-full  text-lg bg-black text-white" placeholder="Search...">
+            <button type="submit" class="bg-gray-600 hover:bg-purple-700 text-white rounded-r-full font-bold py-3 px-6">Go</button>
+        </form>
+    </div>
+    
+    <div class="flex justify-center ">
+        
+    <div class="flex justify-center mr-28">
+        <form class="flex flex-col">
+            <label for="filter" class="text-white text-[14px] pl-5 pb-3">Filter by type of place</label>
+                <select name="filter" class="p-5 border-2 border-gray-500 rounded-full text-lg bg-black text-white">
+                <option value="">Select an option</option>
+                <option value="All Types">Cafe</option>
+                <option value="continents & subcontinents">continents & subcontinents</option>
+                <option value="Regions">Regions</option>
+                <option value="Countries">Countries</option>
+                <option value="Cities">Cities</option>
+            </select>
+        </form>
+    </div>
+
+    
+    
+        <div class="flex justify-center ml-16 ">
+            <form class="flex flex-col">
+                <label for="sort" class="text-white text-[14px] pl-5 pb-3">Sort Places by</label>
+                <select name="sort" type="text" class="p-5 border-2 border-gray-500 rounded-full  text-lg bg-black text-white">
+                    <!-- <option value="">Select an option</option> -->
+                    <option value="Most Visited" selected>Most Visited Places in the world</option>
+                    <option value="A - Z">A - Z</option>
+                    <option value="Z - A">Z - A</option>
+                </select>
+            </form>
+        </div>
+    
+    </div>
+
 </div>
 
-<!-- about section starts -->
-<section class="about">
-    <div class="image">
-        <img src="/images/about-img.jpg" alt="">
-
-    </div>
-    <div class="content">
-        <h3>why choose us?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempora dolorum soluta quae adipisci, sapiente ratione labore</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
-            qui dolore nobis obcaecati, corrupti, eaque minima blanditiis temporibus</p>
-        <div class="icons-container">
-            <div class="icons">
-                <i class="fas fa-map"></i>
-                <span>top destinations</span>
-            </div>
-            <div class="icons">
-                <i class="fas fa-hand-holding-usd"></i>
-                <span>affordable price</span>
-            </div>
-            <div class="icons">
-                <i class="fas fa-headset"></i>
-                <span>24/7 guide service</span>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- about section ends  -->
-
-
-<!-- review section starts  -->
-<section class="reviews">
-    <!-- <h3 id="clients-review">Clients Review</h3> -->
-    <div class="swiper review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slider slide">
-
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Suscipit blanditiis, itaque et perferendis maiores saepe explicabo, 
-                    earum quia voluptate est, doloribus harum praesentium nam accusantium 
-                    magni voluptatum enim nobis esse!</p>
-                <h3>Yodahe Ketema</h3>
-                <span>traveler</span>
-                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
-
-            </div>
-
-            <div class="swiper-slider slide">
-
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Laudantium labore nam at illum accusamus impedit quibusdam 
-                     reprehenderit maxime quae vitae.</p>
-                <h3> Yihun Shkuri</h3>
-                <span>traveler</span>
-                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
-
-            </div>
-
-            <div class="swiper-slider slide">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Consectetur, blanditiis.</p>
-                <h3> Yordanos Seyoum</h3>
-                <span>traveler</span>
-                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
-
-            </div>
-
-            <div class="swiper-slider slide">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Magnam aut assumenda accusamus necessitatibus et?</p>
-                <h3>Selihom Demeke</h3>
-                <span>traveler</span>
-                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
-
-            </div>
-
-
-            <div class="swiper-slider slide">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Pariatur recusandae reprehenderit nemo quia quisquam molestiae?</p>
-                <h3>Yordanos Yigu</h3>
-                <span>traveler</span>
-                <img src="images/IMG_20230521_125216_945.jpg" alt="Hi">
-
-            </div>
-
-
-        </div>
-    </div>
-</section>
-
-<!-- review section ends  -->
 
 <!-- footer section starts -->
     <section class="footer">

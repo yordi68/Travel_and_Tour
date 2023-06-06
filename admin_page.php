@@ -66,32 +66,34 @@ $data = $db->fetchdata();
 
     <!-- Data Displaying section starts -->
     <section class="m-20 p-5">
-    <?php if ($data && $data->num_rows > 0) { ?>
+    <?php if ($data && $data->num_rows > 0) { 
+        $color = false;
+        ?>
         <table class="w-full border-collapse">
-            <tr class="bg-gray-200 text-xl">
-                <th class="py-2 px-6">ID</th>
-                <th class="py-2 px-6">Name</th>
-                <th class="py-2 px-6">Email</th>
-                <th class="py-2 px-6">Phone</th>
-                <th class="py-2 px-6">Address</th>
-                <th class="py-2 px-6">Location</th>
-                <th class="py-2 px-6">Guests</th>
-                <th class="py-2 px-6">Arrivals</th>
-                <th class="py-2 px-6">Leaving</th>
-                <th class="py-2 px-6">Actions</th>
+            <tr class="bg-gray-600 text-xl ">
+                <th class="py-10 px-6 text-white text-2xl">ID</th>
+                <th class="py-10 px-6 text-white text-2xl">Name</th>
+                <th class="py-10 px-6 text-white text-2xl">Email</th>
+                <th class="py-10 px-6 text-white text-2xl">Phone</th>
+                <th class="py-10 px-6 text-white text-2xl">Address</th>
+                <th class="py-10 px-6 text-white text-2xl">Location</th>
+                <th class="py-10 px-6 text-white text-2xl">Guests</th>
+                <th class="py-10 px-6 text-white text-2xl">Arrivals</th>
+                <th class="py-10 px-6 text-white text-2xl">Leaving</th>
+                <th class="py-10 px-6 text-white text-2xl">Actions</th>
             </tr>
             <?php while ($row = $data->fetch_assoc()) { ?>
-                <tr class="bg-white text-xl">
-                    <td class="py-2 px-5"><?php echo $row['id']; ?></td>
-                    <td class="py-2 px-5"><?php echo $row['name']; ?></td>
-                    <td class="py-2 px-9"><?php echo $row['email']; ?></td>
-                    <td class="py-2 px-20"><?php echo $row['phone']; ?></td>
-                    <td class="py-2 px-20"><?php echo $row['address']; ?></td>
-                    <td class="py-2 px-20"><?php echo $row['location']; ?></td>
-                    <td class="py-2 px-20"><?php echo $row['guests']; ?></td>
-                    <td class="py-2 px-20"><?php echo $row['arrivals']; ?></td>
-                    <td class="py-2 px-20"><?php echo $row['leaving']; ?></td>
-                    <td class="py-2 px-20">
+                <tr class="bg-white text-xl ">
+                    <td class="py-10 px-5"><?php echo $row['id']; ?></td>
+                    <td class="py-10 px-5"><?php echo $row['name']; ?></td>
+                    <td class="py-10 px-9"><?php echo $row['email']; ?></td>
+                    <td class="py-10 px-5"><?php echo $row['phone']; ?></td>
+                    <td class="py-10 px-20"><?php echo $row['address']; ?></td>
+                    <td class="py-10 px-20"><?php echo $row['location']; ?></td>
+                    <td class="py-10 px-20"><?php echo $row['guests']; ?></td>
+                    <td class="py-10 px-20"><?php echo $row['arrivals']; ?></td>
+                    <td class="py-10 px-20"><?php echo $row['leaving']; ?></td>
+                    <td class="py-10 px-20">
                         <a href="delete.php?id=<?php echo $row['id']; ?>" class="text-red-500">Delete</a>
                     </td>
                 </tr>
