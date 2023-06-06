@@ -8,8 +8,6 @@
     <title>Home</title>
 
 
-    <!-- swiper cdn link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
     <!-- font awesome cdn link-->
@@ -53,8 +51,8 @@
         <div class="swiper home-slider">
 
             <div class="swiper-wrapper">
-                <div class="swipe-slide slide" style="background-image: url(../images/about-img.jpg);">
-                    <div class="content">
+                <div class="swipe-slide slide" style="background-image: url(./images/pexels-simon-berger-1323550.png);">
+                <div class="content">
                         <span style="color: black">explore, discover, Travel</span>
                         <h3>travel around the world</h3>
                         <a href="package.php" class="btn">discover more</a>
@@ -62,33 +60,7 @@
 
                 </div>
 
-                
-
-                <div class="swipe-slide slide" style="background-image:url(images/header-bg-2.jpg) no-repeat">
-                    <div class="content">
-                        <span>explore, discover, Travel</span>
-                        <h3>discover the new places</h3>
-                        <a href="package.php" class="btn">discover more</a>
-                    </div>
-
-                </div>
-
-                <div class="swipe-slide slide" style="background:url(images/header-bg-3.jpg) no-repeat">
-                    <div class="content">
-                        <span>explore, discover, Travel</span>
-                        <h3>make your tour worthwhile </h3>
-                        <a href="package.php" class="btn">discover more</a>
-                    </div>
-
-                </div>
-
-
-
             </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
         </div>
 
 
@@ -147,7 +119,7 @@
 
     <section class="home-about">
         <div class="image">
-            <img src="/images/about-img.jpg" alt="">
+            <img src="./images/pexels-paul-ijsendoorn-33041.png" alt="">
 
         </div>
         <div class="content">
