@@ -37,14 +37,14 @@ class connectToDb {
         }
     }
     
-    public function fetchonerecord($id) {
-        $sql = "SELECT * FROM book_form WHERE id = '$id' ";
+    public function search($place) {
+        $sql = "SELECT * FROM places WHERE place_name = '$place' ";
         $result = $this->conn->query($sql);
         
         if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc();
+            $row = $result->$result;
         } else {
-            echo "No record found with the given user ID";
+            return false;
         }
     }
     

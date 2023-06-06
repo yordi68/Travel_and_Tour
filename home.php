@@ -51,7 +51,7 @@
         <div class="swiper home-slider">
 
             <div class="swiper-wrapper">
-                <div class="swipe-slide slide" style="background-image: url(./images/pexels-simon-berger-1323550.png);">
+                <div class="swipe-slide slide" style="background-image: url(./images/img13.png);">
                 <div class="content">
                         <span style="color: black">explore, discover, Travel</span>
                         <h3>travel around the world</h3>
@@ -119,7 +119,7 @@
 
     <section class="home-about">
         <div class="image">
-            <img src="./images/pexels-paul-ijsendoorn-33041.png" alt="">
+            <img src="./images/img10.png" alt="">
 
         </div>
         <div class="content">
@@ -131,9 +131,6 @@
                 doloremque porro dolorem sit officiis est.</p>
             <a href="about.php" class="btn"> read more</a>
         </div>
-
-
-
     </section>
 
 

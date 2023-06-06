@@ -218,7 +218,7 @@ section {
 
 .home-about .image img{
     width:100%;
-    background-image: url(/images/pexels-simon-berger-1323550.png);
+    /* background-image: url(/images/img10.png); */
     background-size: contain;
 }
 

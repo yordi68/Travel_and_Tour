@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
-
-
+    <!-- tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- swiper cdn link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -29,6 +29,7 @@
         <a href="about.php">about</a>
         <a href="package.php">package</a>
         <a href="book.php">book</a>
+        <a href="#">recent</a>
 
 
     </nav>
@@ -40,8 +41,8 @@
 <!-- header section ends -->
 
 
-<div class="heading" style="background:url(images/header-bg-2.jpg) no repeat">
-    <h1>package</h1>
+<div class="heading" style="background-image: url(./images/img9.png);">
+    <h1 class="text-white">packages</h1>
 </div>
 
 
@@ -57,7 +58,7 @@
 
             <div class="image">
 
-                <img src="images/header-bg-1.jpg" alt="Hi">
+                <img src="./images/img9.png" alt="">
 
             </div>
             <div class="content">

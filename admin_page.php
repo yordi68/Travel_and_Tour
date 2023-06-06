@@ -12,7 +12,7 @@ $data = $db->fetchdata();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>Admin Page</title>
 
     <!-- Tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,6 +40,7 @@ $data = $db->fetchdata();
         <a href="about.php">about</a>
         <a href="package.php">package</a>
         <a href="book.php">book</a>
+        <a href="#">Recent</a>
 
 
     </nav>
