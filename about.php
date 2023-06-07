@@ -96,20 +96,24 @@ $db = new connectToDb();
 
 
 <!-- search result section start  -->
+<section class="home-packages">
 
-<div class="box">
+    <div class="box-container">
+        <div class="box">
 
-    <div class="image">
-        <img src="./images/img4.png" alt="">
+            <div class="image">
+                <img src="./images/img4.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>adventure & tour</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, corrupti!</p>
+                <a href="book.php" class="btn"> book now</a>
+            </div>
+
+        </div>
     </div>
-
-    <div class="content">
-        <h3>adventure & tour</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, corrupti!</p>
-        <a href="book.php" class="btn"> book now</a>
-    </div>
-
-</div>
+</section>
 
 <section class="search-results">
     <div class="container">
