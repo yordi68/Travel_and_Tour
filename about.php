@@ -1,11 +1,3 @@
-<?php
-include('connectToDb.php');
-
-$db = new connectToDb();
-// $data = $db->search();
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +18,11 @@ $db = new connectToDb();
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- ajax link  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 
 </head>
@@ -50,11 +47,39 @@ $db = new connectToDb();
 
 <!-- header section ends -->
 
+
+
+<script>
+    // Function to perform AJAX search request
+    function search() {
+      var query = $("#query").val(); // Get the query from the input field
+      $.ajax({
+        url: "search.php",
+        type: "GET",
+        data: { query: query },
+        success: function (response) {
+          $(".container").html(response); // Update the container with the search results
+        }
+      });
+      return false; // Prevent form submission
+    }
+  </script>
+  
+  <!-- Create a search bar with a form that calls the search function
+  <div class="search">
+    <form onsubmit="return search()">
+      <input type="text" id="query" placeholder="Enter a place name...">
+      <button type="submit">Search</button>
+    </form>
+  </div> -->
+  
+
+<!-- search bar section starts  -->
 <div class="back bg-black px-8 py-32">
 
     <div class="flex justify-center mb-16">
-        <form class="flex">
-            <input type="text" class="p-5 border-2 border-gray-500 rounded-l-full  text-lg bg-black text-white" placeholder="Search...">
+        <form class="flex" onsubmit="return search()">
+            <input id="query" type="text" class="p-5 border-2 border-gray-500 rounded-l-full  text-lg bg-black text-white" placeholder="Search...">
             <button type="submit" class="bg-gray-600 hover:bg-purple-700 text-white rounded-r-full font-bold py-3 px-6">Go</button>
         </form>
     </div>
@@ -93,74 +118,15 @@ $db = new connectToDb();
 
 </div>
 
+<!-- search bar section ends  -->
+
 
 
 <!-- search result section start  -->
-<section class="home-packages">
-
-    <div class="box-container">
-        <div class="box">
-
-            <div class="image">
-                <img src="./images/img4.png" alt="">
-            </div>
-
-            <div class="content">
-                <h3>adventure & tour</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, corrupti!</p>
-                <a href="book.php" class="btn"> book now</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="search-results">
-    <div class="container">
-    <?php
-// Connect to the database
-$db = new mysqli("localhost", "root", "password", "");
-
-// Get the search query from the user input
-$query = $_GET["query"];
-
-// Sanitize the query to prevent SQL injection
-$query = $db->real_escape_string($query);
-
-// Perform a database query to find the place names that match the query
-$sql = "SELECT * FROM place WHERE name LIKE '%$query%'";
-$result = $db->query($sql);
-
-// Check if the query returned any results
-if ($result->num_rows > 0) {
-  while ($row = $result->fetch_assoc()) {
-    // Get the name, description, and image from the row
-    $name = $row["name"];
-    $description = $row["description"];
-    $image = $row["image"];
-
-    // Display each search result within a separate container
-    echo "<div class='container'>";
-    echo "<h3>$name</h3>";
-    echo "<p>$description</p>";
-    echo "<img src='$image' alt='$name'>";
-    echo "</div>";
-  }
-} else {
-  // No results found, display a message within the existing container
-  echo "<div class='container'>";
-  echo "<p>No places found matching your query.</p>";
-  echo "</div>";
-}
-
-// Close the database connection
-$db->close();
-?>
-
-    </div>
-</section>
-
-
+  <!-- Create a container div that will display the results from the PHP file -->
+  <div class="container">
+    <?php include "search.php"; ?>
+  </div>
 
 
 
