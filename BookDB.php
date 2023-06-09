@@ -1,6 +1,6 @@
 <?php
 
-class connectToDb {
+class BookDB {
     private $conn;
     
     public function __construct() {

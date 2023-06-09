@@ -1,7 +1,7 @@
 <?php
-include('connectToDb.php');
+include('BookDB.php');
 
-$db = new connectToDb();
+$db = new BookDB();
 
 $name = $_POST['name'];
 $email = $_POST['email'];
