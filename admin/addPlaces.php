@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>

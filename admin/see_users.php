@@ -23,7 +23,9 @@ $data = $db->fetchdata();
     <!-- Custom CSS file link -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body class="bg-gray-100">
+
 
     <div class="container mx-auto p-10">
         <!-- Data Displaying section starts -->
